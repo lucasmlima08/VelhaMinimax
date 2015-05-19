@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 public class Arvore {
 	
-	/** ATRIBUTOS */
+   /** ATRIBUTOS */
 	
-	private String[] velha = {"?","?","?","?","?","?","?","?","?"};
-	private String tipo = "max";
-	private int custoDeEscolha = 0;
+    private String[] velha = {"?","?","?","?","?","?","?","?","?"};
+    private String tipo = "max";
+    private int custoDeEscolha = 0;
     public ArrayList<Arvore> filhos = new ArrayList<Arvore>();
     
     /** POLIMORFISMO */
@@ -28,8 +28,8 @@ public class Arvore {
     
     public Arvore(){}
     public Arvore(String[] velha, String tipo){
-        this.velha = velha.clone();
-        this.tipo = tipo;
+    	this.velha = velha.clone();
+    	this.tipo = tipo;
     }
     
     /** MÉTODO QUE GERA A ÁRVORE */
@@ -44,11 +44,11 @@ public class Arvore {
         // Ainda sem um vencedor.
         } else { 
         	String[] novaVelha = velha.clone();
-            Arvore filho = null;
-            // Gera os próximos filhos.
+            	Arvore filho = null;
+            	// Gera os próximos filhos.
         	for (int i=0; i<novaVelha.length; i++){
         		// Encontrou uma posição vazia, inclui para gerar um novo filho.
-	        	if (novaVelha[i].equals("?")){ 
+	        	if (novaVelha[i].equals("?")){
 	        		//- Usuário.
 	        		if (getTipo().equals("max")){
 	        			novaVelha[i] = "O";
@@ -58,8 +58,8 @@ public class Arvore {
 	        			novaVelha[i] = "X";
 	        			filho = new Arvore(novaVelha, "max");
 	        		}
-	                filhos.add(filho);
-	                filho.criaFilhos();
+	                	filhos.add(filho);
+	                	filho.criaFilhos();
 	        	}
 	        	novaVelha = velha.clone();
 	        }
