@@ -1,6 +1,7 @@
 # Técnica do Minimax (App Android)
 
-* Um jogo velha 3x3 que usa a técnica do Minimax para vencer o usuário.
+* Um jogo da velha 3x3 que usa a técnica do Minimax para vencer o usuário. Desenvolvido como uma atividade da universidade
+(Ciência da Computação - UEPB) para a disciplina de Inteligência Artificial.
 * Versão Android 4.2.2
 * Play Store = https://play.google.com/store/apps/details?id=com.uepb.ia.velhaminimax
 
